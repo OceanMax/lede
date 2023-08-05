@@ -35,6 +35,8 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ramfree ./packag
 
 # Add luci-theme-neobird
 git clone --depth=1 https://github.com/thinktip/luci-theme-neobird ./package/lean/luci-theme-neobird
+default_theme='neobird'
+sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # Add luci-app-poweroff
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
@@ -48,7 +50,7 @@ sed -i "s/${orig_version}/Firmware compiled by OceanMax/g" zzz-default-settings
 popd
 
 # Modify default IP
-sed -i 's/192.168.1.1/10.8.196.6/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # Clear the login password
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
