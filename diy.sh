@@ -17,8 +17,8 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/hello
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./package/lean/luci-app-openclash
 
 # Add luci-app-passwall
-# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-# svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+git clone -b main --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git ./package/lean/passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall ./package/lean/passwall
 
 # Add luci-app-vssr
 # cd ./package/lean/
