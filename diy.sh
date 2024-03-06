@@ -17,8 +17,8 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/hello
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./package/lean/luci-app-openclash
 
 # Add luci-app-passwall
-git clone -b main --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages.git ./package/lean/passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall ./package/lean/passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
 
 # Add luci-app-vssr
 # cd ./package/lean/
@@ -31,7 +31,7 @@ rm -rf ./feeds/luci/applications/luci-app-netdata/
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
 
 # Add Lienol's Packages
-svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ramfree ./package/lean/luci-app-ramfree
+git clone --depth=1 https://github.com/Lienol/openwrt-package
 
 # Add luci-theme-neobird
 git clone --depth=1 https://github.com/thinktip/luci-theme-neobird ./package/lean/luci-theme-neobird
