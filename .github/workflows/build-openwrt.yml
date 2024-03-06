@@ -65,11 +65,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-
-    - name: Cache
-      uses: klever1988/cachewrtbuild@main
-      with:
-          ccache: 'true'
     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
