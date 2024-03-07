@@ -20,6 +20,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_SH: diy.sh
+  SYS_CONF_SH: configure.sh
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
@@ -72,6 +73,13 @@ jobs:
           ccache: 'true'
           mixkey: 'armv8'
           prefix: 'openwrt'
+    
+    - name: Load custom feeds
+      run: |
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+        chmod +x $SYS_CONF_SH
+        cd openwrt
+        $GITHUB_WORKSPACE/$SYS_CONF_SH
     
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
