@@ -11,7 +11,7 @@
 
 
 # Add luci-app-ssr-plus
-# git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 # Add OpenClash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash ./package/lean/luci-app-openclash
@@ -50,7 +50,7 @@ sed -i "s/${orig_version}/Firmware compiled by OceanMax/g" zzz-default-settings
 popd
 
 # Modify default IP
-# sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # Clear the login password
-# sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
