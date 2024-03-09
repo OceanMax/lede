@@ -9,6 +9,21 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script (After Update feeds)
 
-# custom feeds
-echo "src-git small https://github.com/kenzok8/small.git;master" >> feeds.conf.default
-echo "src-git small_packages https://github.com/kenzok8/small-package.git;main" >> feeds.conf.default
+# helloworld
+echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> feeds.conf.default
+
+# openclash
+echo "src-git openclash https://github.com/vernesong/OpenClash,git;master" >> feeds.conf.default
+
+# passwall
+echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> feeds.conf.default
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> feeds.conf.default
+
+# netdata
+echo "src-git netdata https://github.com/Jason6111/luci-app-netdata.git;main" >> feeds.conf.default
+
+# lienol package
+echo "src-git lienolpackage https://github.com/Lienol/openwrt-package.git;main" >> feeds.conf.default
+
+# poweroff
+echo "src-git poweroff https://github.com/esirplayground/luci-app-poweroff.git;master" >> feeds.conf.default
