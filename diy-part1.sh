@@ -24,6 +24,3 @@ echo "src-git netdata https://github.com/Jason6111/luci-app-netdata.git;main" >>
 
 # lienol package
 echo "src-git lienolpackage https://github.com/Lienol/openwrt-package.git;main" >> feeds.conf.default
-
-# poweroff
-echo "src-git poweroff https://github.com/esirplayground/luci-app-poweroff.git;master" >> feeds.conf.default
