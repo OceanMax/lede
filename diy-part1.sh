@@ -16,9 +16,6 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 # helloworld
 echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> feeds.conf.default
 
-# poweroff
-echo "src-git poweroff https://github.com/esirplayground/luci-app-poweroff;master" >> feeds.conf.default
-
 # netdata
 echo "src-git netdata https://github.com/Jason6111/luci-app-netdata.git;main" >> feeds.conf.default
 
