@@ -16,8 +16,5 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 # helloworld
 echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> feeds.conf.default
 
-# netdata
-echo "src-git netdata https://github.com/Jason6111/luci-app-netdata.git;main" >> feeds.conf.default
-
 # lienol package
 echo "src-git lienolpackage https://github.com/Lienol/openwrt-package.git;main" >> feeds.conf.default
