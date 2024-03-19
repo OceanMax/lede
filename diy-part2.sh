@@ -9,8 +9,13 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script (After Update feeds)
 
+
 # Add luci-app-poweroff
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
+
+# Add luci-app-netdata
+rm -rf ./feeds/luci/applications/luci-app-netdata/
+git clone --depth=1 https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
 
 # Add luci-theme-neobird
 git clone --depth=1 https://github.com/thinktip/luci-theme-neobird ./package/lean/luci-theme-neobird
