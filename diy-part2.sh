@@ -18,7 +18,6 @@ rm -rf ./feeds/luci/applications/luci-app-netdata/
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
 
 # Add luci-theme-infinityfreedom
-git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom ./package/lean/luci-theme-infinityfreedom
 default_theme='infinityfreedom'
 sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
