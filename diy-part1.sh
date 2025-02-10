@@ -20,4 +20,4 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> feed
 echo "src-git lienolpackage https://github.com/Lienol/openwrt-package.git;main" >> feeds.conf.default
 
 # theme
-echo "src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git;master" >> feeds.conf.default
+echo "src-git infinityfreedomng https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git;master" >> feeds.conf.default
