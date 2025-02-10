@@ -17,8 +17,8 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./packag
 rm -rf ./feeds/luci/applications/luci-app-netdata/
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata ./feeds/luci/applications/luci-app-netdata/
 
-# Add luci-theme-infinityfreedom
-default_theme='infinityfreedom'
+# Add luci-theme-infinityfreedom-ng
+default_theme='infinityfreedom-ng'
 sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
 # Mod zzz-default-settings
