@@ -19,5 +19,5 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git;master" >> feed
 # lienol package
 echo "src-git lienolpackage https://github.com/Lienol/openwrt-package.git;main" >> feeds.conf.default
 
-# theme
-# echo "src-git infinityfreedomng https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git;master" >> feeds.conf.default
+# kenzok8 package
+echo "src-git kenzojell https://github.com/kenzok8/jell.git;master" >> feeds.conf.default
