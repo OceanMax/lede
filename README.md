@@ -1,2 +1,2 @@
 # lede
-基於 lean 源碼編譯的 NanoPi R4S 的 OpenWrt 固件
+基於 immortalwrt source 編譯的 rockchip-armv8-friendlyarm_nanopi-r4s 固件
