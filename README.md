@@ -1,1 +1,2 @@
-基於 immortalwrt source 編譯的 rockchip-armv8-friendlyarm_nanopi-r4s 固件
+# OpenWrt
+Rockchip-ARMv8-friendlyarm_nanopi-R4S firmware compiled from the Immortalwrt source
